@@ -3,19 +3,19 @@
 
 struct Account
 {
-	char name[100];//ĞÕÃû 
-	char tel[12];//µç»° 
-	char idCard[19];//Éí·İÖ¤	
-	char username[20];//ÒøĞĞÕËºÅ¿¨ºÅ
-	char password[7];//ÃÜÂë 
-	float money;//Óà¶î
+	char name[100];//å§“å 
+	char tel[12];//ç”µè¯ 
+	char idCard[19];//èº«ä»½è¯	
+	char username[20];//é“¶è¡Œè´¦å·å¡å·
+	char password[7];//å¯†ç  
+	float money;//ä½™é¢
 	
-	struct Account * next; //ÏÂÒ»¸öÕË»§½áµãµÄµØÖ· 
+	struct Account * next; //ä¸‹ä¸€ä¸ªè´¦æˆ·ç»“ç‚¹çš„åœ°å€ 
 };
 typedef struct Account Account; 
 
-Account * head;//Ö¸ÏòÍ·½áµãµÄÍ·Ö¸Õë
-Account * tail;//Ö¸ÏòÎ²½áµãµÄÎ²Ö¸Õë 
+Account * head;//æŒ‡å‘å¤´ç»“ç‚¹çš„å¤´æŒ‡é’ˆ
+Account * tail;//æŒ‡å‘å°¾ç»“ç‚¹çš„å°¾æŒ‡é’ˆ 
 
 void showMenuEnglish()
 {
@@ -24,27 +24,26 @@ void showMenuEnglish()
 
 void signUpChinese()
 {
-	//ÉêÇëÒ»¿é¶ÑÄÚ´æ¿Õ¼ä£¬½«ÆäµØÖ·¸³Öµ¸øÖ¸ÕënewNodeP£¨²»Àí½â¾Ö²¿±äÁ¿ºÍÈ«¾Ö±äÁ¿µÄÍ¬Ñ§ÃÇ¹Û¿´ÈºÀïµÄÊÓÆµCÓïÑÔÄÚ´æ·ÖÅä£© 
 	Account * newNodeP=(Account *)malloc(sizeof(Account));
-	printf("ÇëÊäÈëĞÕÃû£º\n"); 
+	printf("è¯·è¾“å…¥å§“åï¼š\n"); 
 	scanf("%s",newNodeP->name);
 	
-	printf("ÇëÊäÈëµç»°£º\n");
+	printf("è¯·è¾“å…¥ç”µè¯ï¼š\n");
 	scanf("%s",newNodeP->tel); 
 	
-	printf("ÇëÊäÈëÉí·İÖ¤£º\n");
+	printf("è¯·è¾“å…¥èº«ä»½è¯ï¼š\n");
 	scanf("%s",newNodeP->idCard); 
 	
-	printf("ÇëÊäÈëÕËºÅ£º\n");
-	scanf("%s",newNodeP->username); //ÕËºÅÓ¦¸ÃÊÇÓĞÒøĞĞ¸øµÄ£¬Ó¦¸ÃÊÇÏµÍ³Éú³ÉµÄ£¬Ë¼¿¼ÔõÃ´×ö£¿
+	printf("è¯·è¾“å…¥è´¦å·ï¼š\n");
+	scanf("%s",newNodeP->username);
 	
-	printf("ÇëÊäÈëÃÜÂë£º\n");
+	printf("è¯·è¾“å…¥å¯†ç ï¼š\n");
 	scanf("%s",newNodeP->password); 
 	
 	newNodeP->money=0.0f;
 	newNodeP->next=NULL;
 	
-	//Ìí¼Ó½áµãµ½Á´±íÖĞ
+	//æ·»åŠ ç»“ç‚¹åˆ°é“¾è¡¨ä¸­
 	if(head==NULL)
 	{
 		head=newNodeP;
@@ -56,7 +55,7 @@ void signUpChinese()
 		tail=newNodeP;
 	}
 	
-	printf("Ìí¼Ó³É¹¦\n");
+	printf("æ·»åŠ æˆåŠŸ\n");
 	system("pause");
 }
 
@@ -75,9 +74,9 @@ void showMenuChinese()
 	while(1)
 	{
 		system("cls");
-		printf("°´1£¬¿ª»§\n");
-		printf("°´2£¬µÇÂ¼\n");
-		printf("°´3£¬ÍË³ö\n");
+		printf("æŒ‰1ï¼Œå¼€æˆ·\n");
+		printf("æŒ‰2ï¼Œç™»å½•\n");
+		printf("æŒ‰3ï¼Œé€€å‡º\n");
 		int n;
 		scanf("%d",&n);
 		if(n==1)
@@ -98,16 +97,16 @@ void showMenuChinese()
 int main()
 {
 	printf("Press 1, English Service\n");
-	printf("°´2£¬ÖĞÎÄ·şÎñ\n");
+	printf("æŒ‰2ï¼Œä¸­æ–‡æœåŠ¡\n");
 	int language;
 	scanf("%d",&language);
 	if(language==1)
 	{
-		showMenuEnglish(); //ÏÔÊ¾ÎÄÖĞ²Ëµ¥ 
+		showMenuEnglish(); //æ˜¾ç¤ºæ–‡ä¸­èœå• 
 	}
 	else if(language==2)
 	{
-		showMenuChinese(); //ÏÔÊ¾Ó¢ÎÄ²Ëµ¥ 
+		showMenuChinese(); //æ˜¾ç¤ºè‹±æ–‡èœå• 
 	}
 	return 0;
 } 
