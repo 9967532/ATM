@@ -38,17 +38,17 @@ int main()
 {
     printf("\t\t___________________________________________________\n");
     printf("\t\t|                                                 |\n");
-    printf("\t\t|                  wodeÒøĞĞ»¶Ó­Äã                 |\n");
+    printf("\t\t|                  wodeé“¶è¡Œæ¬¢è¿ä½                  |\n");
     printf("\t\t|                                                 |\n");
     printf("\t\t|        wode Bank of China welcomes you          |\n");
     printf("\t\t|                                                 |\n");
-    printf("\t\t|                     ÖĞÎÄ·şÎñ                    |\n");
-    printf("\t\t|                      Çë°´1£¡                    |\n");
+    printf("\t\t|                     ä¸­æ–‡æœåŠ¡                    |\n");
+    printf("\t\t|                      è¯·æŒ‰1ï¼                    |\n");
     printf("\t\t|                                                 |\n");
     printf("\t\t|                  Engilsh servise                |\n");
-    printf("\t\t|                    press two£¡                  |\n");
+    printf("\t\t|                    press twoï¼                  |\n");
     printf("\t\t|                                                 |\n");
-	printf("\t\t|_________________________________________________|\n");
+    printf("\t\t|_________________________________________________|\n");
 
 	int x;
 	scanf("%d",&x); 
@@ -82,11 +82,11 @@ void enter3()
 	printf(" \t\t\t  |                3.back               |\n");
 	printf(" \t\t\t                                        \n");
 	printf("\n\n");
-	printf(" \t\t\t    please enter your operation number£º \n\n\t\t\t\t  ");
+	printf(" \t\t\t    please enter your operation numberï¼š \n\n\t\t\t\t  ");
 	scanf("%d", &a);
 	switch (a)
 	{
-	case 1:system("cls");//ÇåÆÁ
+	case 1:system("cls");//æ¸…å±
 		shezhi2();
 		break;
 	case 2:system("cls");
@@ -95,7 +95,7 @@ void enter3()
 	case 3:system("cls");
 		tuichu2();
 		break;
-	default:printf("\t\t\t\tÎŞ´Ë²Ù×÷Ïî\nÇëÖØĞÂÑ¡Ôñ\n");
+	default:printf("\t\t\t\tæ— æ­¤æ“ä½œé¡¹\nè¯·é‡æ–°é€‰æ‹©\n");
 		system("pause");
 		system("cls");
 		enter();
@@ -148,7 +148,7 @@ void enter4()
 		case 6:system("cls");
 			enter3();
 			break;
-		default:printf("\t\t\t\tÎŞ´Ë²Ù×÷Ïî\n\n");
+		default:printf("\t\t\t\tæ— æ­¤æ“ä½œé¡¹\n\n");
 			system("pause");
 			system("cls");
 		}
@@ -219,7 +219,7 @@ void chaxun2()
 	system("pause");
 	system("cls");
 	printf("\n\n\n");
-	ch = getchar();//½ÓÊÕ×îºóµÄ»Ø³µ·û
+	ch = getchar();//æ¥æ”¶æœ€åçš„å›è½¦ç¬¦
 	if (ch == '\n')
 	{
 		enter4();
@@ -259,19 +259,19 @@ void qukuan2()
 		if (a == '2')
 		{
 			save();
-			system("pause");//¶³½áÆÁÄ»
+			system("pause");//å†»ç»“å±å¹•
 			system("cls");
 			printf("\n\n\n");
 		}
 		else
 		{
 			save();
-			system("pause");//¶³½áÆÁÄ»
+			system("pause");//å†»ç»“å±å¹•
 			system("cls");
 			printf("\n\n\n");
 		}
 				
-	ch = getchar();//½ÓÊÕ×îºóµÄ»Ø³µ·û
+	ch = getchar();//æ¥æ”¶æœ€åçš„å›è½¦ç¬¦
 	if (ch == '\n')
 	{
 		system("cls");
@@ -287,7 +287,7 @@ void cunkuan2()
 	user[k].account = user[k].account + a;
 	save();
 	printf(" \t\t\t\tyyour balance %dRNB\n", user[k].account);
-	system("pause");//¶³½áÆÁÄ»
+	system("pause");//å†»ç»“å±å¹•
 	system("cls");
 	printf("\n\n\n");
 	enter2();
@@ -297,7 +297,7 @@ void xiugai2()
 	printf("\t\t\t\tplease you input new password\n\t\t\t\t  ");
 	scanf("%s", user[k].key);
 	save();
-	system("pause");//¶³½áÆÁÄ»
+	system("pause");//å†»ç»“å±å¹•
 	system("cls");
 	printf("\n\n\n");
 	enter4();
@@ -337,7 +337,7 @@ void zhuanzhang2()
 		user[a].account = user[a].account + x;
 		save();
 	}
-	system("pause");//¶³½áÆÁÄ»
+	system("pause");//å†»ç»“å±å¹•
 	system("cls");
 	printf("\n\n\n");
 	enter4();
@@ -355,7 +355,7 @@ void shezhi2()
 	printf("\n\t\t\t\tplease set your password:\n\t\t\t\t  ");
 	scanf("%s", user[j].key);
 	user[j].account = 0;
-	printf("card number£º%s \nbalance£º%4d\n", user[j].ID, user[j].account);
+	printf("card numberï¼š%s \nbalanceï¼š%4d\n", user[j].ID, user[j].account);
 	user[1000].account = ++j;
 	save();
 	printf("\n\n\t\t\t\tCongratulations on your successful registration!");
@@ -364,7 +364,7 @@ void shezhi2()
 	printf("\t\t\t\tback step!\n");
 	printf("\n\n\n");
 	system("cls");
-	ch = getchar();//½ÓÊÕ×îºóµÄ»Ø³µ·û
+	ch = getchar();//æ¥æ”¶æœ€åçš„å›è½¦ç¬¦
 	if (ch == '\n')
 	{
 		enter3();
@@ -377,21 +377,21 @@ void enter()
 	load();
 	system("cls");
 	printf(" \t\t\t                       \n");
-	printf(" \t\t\t |  »¶Ó­À´µ½wodeÒøĞĞ  |\n");
+	printf(" \t\t\t |  æ¬¢è¿æ¥åˆ°wodeé“¶è¡Œ  |\n");
 	printf(" \t\t\t |                    |\n");
 	printf(" \t\t\t |                    |\n");
-	printf(" \t\t\t | ÇëÑ¡ÔñÄã°ìÀíµÄÒµÎñ |\n");
+	printf(" \t\t\t | è¯·é€‰æ‹©ä½ åŠç†çš„ä¸šåŠ¡ |\n");
 	printf(" \t\t\t |                    |\n");
-	printf(" \t\t\t |       1.×¢²á       |\n");
-	printf(" \t\t\t |       2.µÇÂ¼       |\n");
-	printf(" \t\t\t |       3.ÍË³ö       |\n");
+	printf(" \t\t\t |       1.æ³¨å†Œ       |\n");
+	printf(" \t\t\t |       2.ç™»å½•       |\n");
+	printf(" \t\t\t |       3.é€€å‡º       |\n");
 	printf(" \t\t\t |                    |\n");
 	
-	printf(" \t\t\t   ÇëÊäÈëÄúµÄ²Ù×÷ºÅ£º \n\n\t\t\t\t  ");
+	printf(" \t\t\t   è¯·è¾“å…¥æ‚¨çš„æ“ä½œå·ï¼š \n\n\t\t\t\t  ");
 	scanf("%d", &a);
 	switch (a)
 	{
-	case 1:system("cls");//ÇåÆÁ
+	case 1:system("cls");//æ¸…å±
 		shezhi();
 		break;
 	case 2:system("cls");
@@ -400,7 +400,7 @@ void enter()
 	case 3:system("cls");
 		tuichu();
 		break;
-	default:printf("\t\t\t\tÎŞ´Ë²Ù×÷Ïî\nÇëÖØĞÂÑ¡Ôñ\n");
+	default:printf("\t\t\t\tæ— æ­¤æ“ä½œé¡¹\nè¯·é‡æ–°é€‰æ‹©\n");
 		system("pause");
 		system("cls");
 		enter();
@@ -422,7 +422,7 @@ void load()
 	}
 	fclose(fp);
 	system("cls");
-	printf("ÄúµÄÓà¶îÎª£º\n");
+	printf("æ‚¨çš„ä½™é¢ä¸ºï¼š\n");
 }
 void save()
 {
@@ -443,21 +443,21 @@ void shezhi()
 	{
 		j = user[1000].account;
 	}
-	printf("\n\n\t\t\t\tÇëÉèÖÃÄúµÄ¿¨ºÅ:\n\t\t\t\t  ");
+	printf("\n\n\t\t\t\tè¯·è®¾ç½®æ‚¨çš„å¡å·:\n\t\t\t\t  ");
 	scanf("%s", user[j].ID);
-	printf("\n\t\t\t\tÇëÉèÖÃÄúµÄÃÜÂë:\n\t\t\t\t  ");
+	printf("\n\t\t\t\tè¯·è®¾ç½®æ‚¨çš„å¯†ç :\n\t\t\t\t  ");
 	scanf("%s", user[j].key);
 	user[j].account = 0;
-	printf("¿¨ºÅ£º%s \nÓà¶î£º%4d\n", user[j].ID, user[j].account);
+	printf("å¡å·ï¼š%s \nä½™é¢ï¼š%4d\n", user[j].ID, user[j].account);
 	user[1000].account = ++j;
 	save();
-	printf("\n\n\t\t\t\t¹§Ï²Äú×¢²á³É¹¦!");
+	printf("\n\n\t\t\t\tæ­å–œæ‚¨æ³¨å†ŒæˆåŠŸ!");
 	printf("\n\n\n");
 	system("pause");
-	printf("\t\t\t\t°´»Ø³µ¼ü·µ»ØÉÏÒ»¼¶\n");
+	printf("\t\t\t\tæŒ‰å›è½¦é”®è¿”å›ä¸Šä¸€çº§\n");
 	printf("\n\n\n");
 	system("cls");
-	ch = getchar();//½ÓÊÕ×îºóµÄ»Ø³µ·û
+	ch = getchar();//æ¥æ”¶æœ€åçš„å›è½¦ç¬¦
 	if (ch == '\n')
 	{
 		enter();
@@ -466,18 +466,18 @@ void shezhi()
 
 void tuichu()
 {
-	printf("\t\t\t      ¸ĞĞ»ÄúµÄÊ¹ÓÃ!     \n");
-	printf("\t\t\t      »¶Ó­ÏÂ´Î¹âÁÙ!     \n");
+	printf("\t\t\t      æ„Ÿè°¢æ‚¨çš„ä½¿ç”¨!     \n");
+	printf("\t\t\t      æ¬¢è¿ä¸‹æ¬¡å…‰ä¸´!     \n");
 	exit(0);
 }
 void denglu()
 {
 	int i, n, m;
 	char  id[20], kw[20];
-	printf("\t\t    Á¬ĞøÊä´íÕËºÅ»òÃÜÂëÈı´Î£¬½«·µ»ØÖ÷²Ëµ¥\n");
+	printf("\t\t    è¿ç»­è¾“é”™è´¦å·æˆ–å¯†ç ä¸‰æ¬¡ï¼Œå°†è¿”å›ä¸»èœå•\n");
 	for (i = 0; i < 3; i++)
 	{
-		printf("ÇëÊäÈëµÇÂ¼ÕËºÅ\n");
+		printf("è¯·è¾“å…¥ç™»å½•è´¦å·\n");
 		scanf("%s", id);
 		for (k = 0; k < NUM - 1; k++)
 		{
@@ -491,17 +491,17 @@ void denglu()
 		}
 		if (m == 0)
 		{
-			printf("¸ÃÕËºÅ²»´æÔÚ,Ê£ÓàÊäÈë´ÎÊı%d\n", 2 - i);
+			printf("è¯¥è´¦å·ä¸å­˜åœ¨,å‰©ä½™è¾“å…¥æ¬¡æ•°%d\n", 2 - i);
 			if ((2 - i) == 0)
 			{
-				printf("ÕËºÅÊäÈë´íÎó3´Î£¬¼´½«·µ»Ø²Ëµ¥......\n");
+				printf("è´¦å·è¾“å…¥é”™è¯¯3æ¬¡ï¼Œå³å°†è¿”å›èœå•......\n");
 				system("pause");
 				enter();
 			}
 		}
 		if (m == 1)
 		{
-			printf("ÇëÊäÈëµÇÂ¼ÃÜÂë\n");
+			printf("è¯·è¾“å…¥ç™»å½•å¯†ç \n");
 			for (n = 0; n < 3; n++)
 			{
 				scanf("%s", kw);
@@ -512,10 +512,10 @@ void denglu()
 				}
 				else
 				{
-					printf("ÃÜÂëÊäÈë´íÎó,Ê£ÓàÊäÈë´ÎÊı%d\n", 2 - n);
+					printf("å¯†ç è¾“å…¥é”™è¯¯,å‰©ä½™è¾“å…¥æ¬¡æ•°%d\n", 2 - n);
 					if ((2 - n) == 0)
 					{
-						printf("ÃÜÂëÊäÈë´íÎó3´Î£¬¼´½«·µ»Ø²Ëµ¥......\n");
+						printf("å¯†ç è¾“å…¥é”™è¯¯3æ¬¡ï¼Œå³å°†è¿”å›èœå•......\n");
 						system("pause");
 						enter();
 					}
@@ -532,17 +532,17 @@ void enter2()
 	{
 		printf("\n\n\n");
 		printf(" \t\t\t-----------------------------\n");
-		printf(" \t\t\t|  A T M Ïµ Í³ ¸ö ÈË ½ç Ãæ  |\n");
-		printf(" \t\t\t|     Äú ÓĞ ÒÔ ÏÂ Ñ¡ Ôñ     |\n");
+		printf(" \t\t\t|  A T M ç³» ç»Ÿ ä¸ª äºº ç•Œ é¢  |\n");
+		printf(" \t\t\t|     æ‚¨ æœ‰ ä»¥ ä¸‹ é€‰ æ‹©     |\n");
 		printf(" \t\t\t-----------------------------\n");
 		printf(" \t\t\t                          \n");
 		printf(" \t\t\t    |                    \n");
-		printf(" \t\t\t    |     1.  ²éÑ¯       \n");
-		printf(" \t\t\t    |     2.  È¡¿î       \n");
-		printf(" \t\t\t    |     3.  ×ªÕË       \n");
-		printf(" \t\t\t    |     4.  ´æ¿î       \n");
-		printf(" \t\t\t    |     5.ĞŞ¸ÄÃÜÂë     \n");
-		printf(" \t\t\t    |     6.·µ»ØÄ¿Â¼     \n");
+		printf(" \t\t\t    |     1.  æŸ¥è¯¢       \n");
+		printf(" \t\t\t    |     2.  å–æ¬¾       \n");
+		printf(" \t\t\t    |     3.  è½¬è´¦       \n");
+		printf(" \t\t\t    |     4.  å­˜æ¬¾       \n");
+		printf(" \t\t\t    |     5.ä¿®æ”¹å¯†ç      \n");
+		printf(" \t\t\t    |     6.è¿”å›ç›®å½•     \n");
 		printf(" \t\t\t                         \n\n\t\t\t\t  ");
 		scanf("%d", &n);
 		switch (n)
@@ -565,7 +565,7 @@ void enter2()
 		case 6:system("cls");
 			enter();
 			break;
-		default:printf("\t\t\t\tÎŞ´Ë²Ù×÷Ïî\n\n");
+		default:printf("\t\t\t\tæ— æ­¤æ“ä½œé¡¹\n\n");
 			system("pause");
 			system("cls");
 		}
@@ -576,12 +576,12 @@ void chaxun()
 {
 	char ch;
 	load();
-	printf("\t\t\t      »¶Ó­Ê¹ÓÃ²éÑ¯·şÎñ...\n");
-	printf("\t\t\t      ÄúµÄÓà¶îÎª%dÔª\n\n", user[k].account);
+	printf("\t\t\t      æ¬¢è¿ä½¿ç”¨æŸ¥è¯¢æœåŠ¡...\n");
+	printf("\t\t\t      æ‚¨çš„ä½™é¢ä¸º%då…ƒ\n\n", user[k].account);
 	system("pause");
 	system("cls");
 	printf("\n\n\n");
-	ch = getchar();//½ÓÊÕ×îºóµÄ»Ø³µ·û
+	ch = getchar();//æ¥æ”¶æœ€åçš„å›è½¦ç¬¦
 	if (ch == '\n')
 	{
 		enter2();
@@ -593,24 +593,24 @@ void qukuan()
 	int i, x;
 	char a, ch;
 	printf(" \t\t\t                               \n");
-	printf(" \t\t\t|  ±¾ÒøĞĞ×îµÍÈ¡¿î½ğ¶îÎª100Ôª  \n");
-	printf(" \t\t\t|       Äú¿¨ºÅµÄÓà¶îÎª        \n");
-	printf(" \t\t\t|       %dÔª                  \n", user[k].account);
-    printf("\t\t\t\tÇëÊäÈ¡¿îµÄ½ğ¶î:\n\t\t\t\t  ");
+	printf(" \t\t\t|  æœ¬é“¶è¡Œæœ€ä½å–æ¬¾é‡‘é¢ä¸º100å…ƒ  \n");
+	printf(" \t\t\t|       æ‚¨å¡å·çš„ä½™é¢ä¸º        \n");
+	printf(" \t\t\t|       %då…ƒ                  \n", user[k].account);
+    printf("\t\t\t\tè¯·è¾“å–æ¬¾çš„é‡‘é¢:\n\t\t\t\t  ");
 	scanf("%d", &x);							
 	if (x <= user[k].account)
 	{
 		user[k].account = user[k].account - x;
-		printf(" \t\t\t\tÄúÈ¡ÁË%dÔªÇ®\n", x);
-		printf(" \t\t\t\tÄúµÄÓà¶îÎª%dÔª\n", user[k].account);
+		printf(" \t\t\t\tæ‚¨å–äº†%då…ƒé’±\n", x);
+		printf(" \t\t\t\tæ‚¨çš„ä½™é¢ä¸º%då…ƒ\n", user[k].account);
 	}
 	else if (x > user[k].account)
 	{
-		printf("\t\t\t\tÄú¿¨ÀïµÄÓà¶î²»×ã\n");
-		printf("\t\t\t\tÇëÖØĞÂÊäÈëÌáÈ¡½ğ¶î:\n");
+		printf("\t\t\t\tæ‚¨å¡é‡Œçš„ä½™é¢ä¸è¶³\n");
+		printf("\t\t\t\tè¯·é‡æ–°è¾“å…¥æå–é‡‘é¢:\n");
 	}
-	printf(" \t\t\t\tÇëÑ¡ÔñÊÇ·ñ¼ÌĞøÈ¡¿î\n");
-	printf(" \t\t\t\tÊÇ:1          ·ñ:2\n\n\t\t\t\t  ");
+	printf(" \t\t\t\tè¯·é€‰æ‹©æ˜¯å¦ç»§ç»­å–æ¬¾\n");
+	printf(" \t\t\t\tæ˜¯:1          å¦:2\n\n\t\t\t\t  ");
 	scanf("%s", &a);
 	if (a == '1')
 	{
@@ -621,18 +621,18 @@ void qukuan()
 		if (a == '2')
 		{
 			save();
-			system("pause");//¶³½áÆÁÄ»
+			system("pause");//å†»ç»“å±å¹•
 			system("cls");
 			printf("\n\n\n");
 		}
 		else
 		{
 			save();
-			system("pause");//¶³½áÆÁÄ»
+			system("pause");//å†»ç»“å±å¹•
 			system("cls");
 			printf("\n\n\n");
 		}		
-	ch = getchar();//½ÓÊÕ×îºóµÄ»Ø³µ·û
+	ch = getchar();//æ¥æ”¶æœ€åçš„å›è½¦ç¬¦
 	if (ch == '\n')
 	{
 		system("cls");
@@ -643,12 +643,12 @@ void qukuan()
 void cunkuan()
 {
 	int a;
-	printf("\t\t\t\tÇëÊäÈë´æÈëÕË»§µÄ½ğ¶î:\n\n\t\t\t\t  ");
+	printf("\t\t\t\tè¯·è¾“å…¥å­˜å…¥è´¦æˆ·çš„é‡‘é¢:\n\n\t\t\t\t  ");
 	scanf("%d", &a);
 	user[k].account = user[k].account + a;
 	save();
-	printf(" \t\t\t\tÄúµÄÓà¶îÎª%dÔª\n", user[k].account);
-	system("pause");//¶³½áÆÁÄ»
+	printf(" \t\t\t\tæ‚¨çš„ä½™é¢ä¸º%då…ƒ\n", user[k].account);
+	system("pause");//å†»ç»“å±å¹•
 	system("cls");
 	printf("\n\n\n");
 	enter2();
@@ -656,10 +656,10 @@ void cunkuan()
 
 void xiugai()
 {
-	printf("\t\t\t\tÇëÊäÈëĞÂµÄÃÜÂë\n\t\t\t\t  ");
+	printf("\t\t\t\tè¯·è¾“å…¥æ–°çš„å¯†ç \n\t\t\t\t  ");
 	scanf("%s", user[k].key);
 	save();
-	system("pause");//¶³½áÆÁÄ»
+	system("pause");//å†»ç»“å±å¹•
 	system("cls");
 	printf("\n\n\n");
 	enter2();
@@ -669,28 +669,28 @@ void zhuanzhang()
 {
 	int a,  x;
 	char kahao[20];
-	printf("\t\t\t       ÇëÊäÈë×ªÕË¿¨ºÅ:\n\t\t\t\t  ");
+	printf("\t\t\t       è¯·è¾“å…¥è½¬è´¦å¡å·:\n\t\t\t\t  ");
 	scanf("%s", kahao);
 	for (a = 0; a < NUM - 1; a++)
 	{
 		if (!strcmp(kahao, user[a].ID))
 		{
-			printf("\t\t\t\t  ¿¨ºÅÕıÈ·\n\n");
+			printf("\t\t\t\t  å¡å·æ­£ç¡®\n\n");
 			break;
 		}
 	}
 	if (strcmp(kahao, user[a].ID))
 	{
-		printf("\t\t\t\t  ¿¨ºÅ²»´æÔÚ\n\n");
+		printf("\t\t\t\t  å¡å·ä¸å­˜åœ¨\n\n");
 		system("pause");
 		zhuanzhang();
 	}
-	printf("\t\t\t\tÇëÊäÈë×ªÕË½ğ¶î\n\t\t\t\t    ");
+	printf("\t\t\t\tè¯·è¾“å…¥è½¬è´¦é‡‘é¢\n\t\t\t\t    ");
 	scanf("%d", &x);
 	if (x > user[k].account)
 	{
-		printf("\t\t\t\tÄú¿¨ÀïµÄÓà¶î²»×ã\n");
-		printf("\t\t\t\tÇëÖØĞÂÊäÈëÌáÈ¡½ğ¶î:\n");
+		printf("\t\t\t\tæ‚¨å¡é‡Œçš„ä½™é¢ä¸è¶³\n");
+		printf("\t\t\t\tè¯·é‡æ–°è¾“å…¥æå–é‡‘é¢:\n");
 	}
 	else
 	{
@@ -698,7 +698,7 @@ void zhuanzhang()
 		user[a].account = user[a].account + x;
 		save();
 	}
-	system("pause");//¶³½áÆÁÄ»
+	system("pause");//å†»ç»“å±å¹•
 	system("cls");
 	printf("\n\n\n");
 	enter2();
